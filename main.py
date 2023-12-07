@@ -9,7 +9,7 @@ def main():
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(levelname)s %(message)s')
 
-    numbers = [128, 255, 99999, 10651060, 12345678]
+    numbers = [128, 255, 99999, 10651060, 12345678, 73967205]
 
     start = time()
     logging.info("Sync calculations")
