@@ -5,10 +5,10 @@ from multiprocessing import current_process
 def factorize(*numbers):
     logging.debug(f"pid={current_process().pid}, {numbers=}")
     results = []
-    for numb in numbers:
+    for number in numbers:
         factors = []
-        for i in range(1, numb + 1):
-            if numb % i == 0:
+        for i in range(1, number + 1):
+            if number % i == 0:
                 factors.append(i)
         results.append(factors)
     return results
